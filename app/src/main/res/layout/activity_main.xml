@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrond"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="تبدیل ارز"
+    android:textStyle="bold"
+    android:textColor="#fff"
+    android:textSize="25sp"
+
+    android:layout_centerHorizontal="true"
+    android:id="@+id/title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مبلغ خود را وارد کنید :"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txt1"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_txt"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edt_price"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="مقدار ..."
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/lnr_convert"
+        android:layout_below="@+id/edt_price"
+        android:layout_margin="10dp">
+        <Spinner
+            android:id="@+id/spinner_chose"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/shape_txt" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="به"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/txt2"
+            android:layout_weight="3"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_txt"
+            android:id="@+id/spinner_convert"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/txt_return"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lnr_convert"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape"
+        android:hint="نمایش تبدیل"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:textStyle="bold"
+       android:elevation="50dp" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_btn"
+        android:layout_below="@+id/txt_return"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="تبدیلش کن !"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="گروه نرم افزاری آلفا"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#E9CDCDCD"/>
+
+
+
+
+
+</RelativeLayout>
